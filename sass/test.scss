@@ -1,0 +1,5 @@
+@import "compass";
+
+.hoge {
+    @include border-radius(.3em);
+}
