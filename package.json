@@ -1,0 +1,25 @@
+{
+  "name": "cham538.com",
+  "version": "0.0.0",
+  "description": "my Website",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kurohune538/komiSite.git"
+  },
+  "keywords": [
+    "cham"
+  ],
+  "author": "Shinnosuke Komiya",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kurohune538/komiSite/issues"
+  },
+  "homepage": "https://github.com/kurohune538/komiSite",
+  "devDependencies": {
+    "gulp": "^3.8.11"
+  }
+}
