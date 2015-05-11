@@ -1,5 +1,17 @@
 @import "compass";
 
+
+
 .hoge {
-    @include border-radius(.3em);
+border-radius: 3px;
+ box-shadow: 0 0 5px 1px #999;
 }
+
+.gradients {
+    background-image: linear-gradient(#eee, #ccc 50%, #aaa);
+}
+.gradients-keyword {
+    background-image: linear-gradient(to top left, #eee, #ccc 50%, #aaa);
+}
+.gradients-angle {
+    background-image: linear-gradient(30deg, #eee, #ccc 50%, #aaa);

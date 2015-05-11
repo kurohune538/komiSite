@@ -1,0 +1,10 @@
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ShinnosukeKomiya\/Dropbox\/me\/cham538\/cham538_source\/app\/styles\/test\.scss}line{font-family:\000033}}
+body {
+  color: #f00;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ShinnosukeKomiya\/Dropbox\/me\/cham538\/cham538_source\/app\/styles\/test\.scss}line{font-family:\000037}}
+.hoge p {
+  font-size: 17px;
+  color: #f00;
+}
