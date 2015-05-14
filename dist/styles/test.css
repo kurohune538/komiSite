@@ -4,7 +4,38 @@ body {
 }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ShinnosukeKomiya\/Dropbox\/me\/cham538\/cham538_source\/app\/styles\/test\.scss}line{font-family:\000037}}
-.hoge p {
+.hoge {
+  width: 100px;
+  height: 50px;
+  background-color: #222;
+  margin: 0 auto;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ShinnosukeKomiya\/Dropbox\/me\/cham538\/cham538_source\/app\/styles\/test\.scss}line{font-family:\000038}}
+.hoge background {
+  color: #f00;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ShinnosukeKomiya\/Dropbox\/me\/cham538\/cham538_source\/app\/styles\/test\.scss}line{font-family:\0000317}}
+.hoge {
   font-size: 17px;
   color: #f00;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ShinnosukeKomiya\/Dropbox\/me\/cham538\/cham538_source\/app\/styles\/test\.scss}line{font-family:\0000322}}
+.hoge1 {
+  float: left;
+  margin: 10px 0 10px 0;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ShinnosukeKomiya\/Dropbox\/me\/cham538\/cham538_source\/app\/styles\/test\.scss}line{font-family:\0000327}}
+.hoge2 {
+  float: left;
+  margin: 10px 0 10px 0;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ShinnosukeKomiya\/Dropbox\/me\/cham538\/cham538_source\/app\/styles\/test\.scss}line{font-family:\0000333}}
+.wrapper {
+  position: absolute;
+  width: 400px;
+  left: 50%;
 }

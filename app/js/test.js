@@ -1,0 +1,3 @@
+function ss() {
+  alert("ss");
+}

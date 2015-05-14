@@ -4,7 +4,34 @@ body {
   color:#f00;
 
 }
-.hoge p{
+.hoge {
+  background {
+    color:#f00;
+
+  }
+  width:100px;
+  height:50px;
+  background-color:#222;
+  margin: 0 auto;
+}
+.hoge {
  font-size:17px;
  color: #f00;
+}
+
+.hoge1 {
+  float:left;
+  margin:10px 0 10px 0;
+}
+
+.hoge2 {
+  float:left;
+  margin:10px 0 10px 0;
+
+}
+
+.wrapper{
+  position:absolute;
+  width:400px;
+  left:50%;
 }
