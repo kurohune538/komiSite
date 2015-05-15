@@ -1,0 +1,16 @@
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ShinnosukeKomiya\/Dropbox\/me\/cham538\/cham538_source\/app\/styles\/medium\.scss}line{font-family:\000035}}
+body {
+  font-family: "futura-pt",sans-serif;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ShinnosukeKomiya\/Dropbox\/me\/cham538\/cham538_source\/app\/styles\/medium\.scss}line{font-family:\000039}}
+header .header-wrapper {
+  width: 100%;
+  height: 96px;
+  background-color: #FFEC00;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ShinnosukeKomiya\/Dropbox\/me\/cham538\/cham538_source\/app\/styles\/medium\.scss}line{font-family:\0000316}}
+header .title {
+  color: #FFF;
+  font-size: 30px;
+}

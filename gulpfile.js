@@ -38,7 +38,6 @@ var paths = {
 //html
 gulp.task('jade', function() {
 		gulp.src('app/**/*.jade')
-			.pipe(watch('app/**/*.jade',['bs-reload']))
 			.pipe(jade())
 			.pipe(htmlhint())
 			.pipe(prettify({indent_size:2}))
@@ -67,13 +66,14 @@ gulp.task('compass',function(){
 
 //watch
 gulp.task('watch',function() {
-	gulp.watch('app/styles/*.scss',['compass']);
-	gulp.watch('dist/styles/*.css', ['autoprefixer']);
-	gulp.watch('app/styles/*.css', ['cssmin']);
-	gulp.watch('app/*.html',['copy','bs-reload']);
+	gulp.watch('app/styles/**/*.scss',['compass']);
+	gulp.watch('dist/styles/**/*.css', ['autoprefixer']);
+	gulp.watch('app/styles/**/*.css', ['cssmin']);
+	//gulp.watch('app/*.html',['copy','bs-reload']);
 	gulp.watch('app/images/*',['imagemin']);
-	gulp.watch('app/styles/*.scss',['bs-reload']);
-	gulp.watch('app/js/*.js', ['uglify']);
+	gulp.watch('app/styles/**/*.scss',['bs-reload']);
+	gulp.watch('app/js/*.js', ['uglify','bs-reload']);
+	gulp.watch('app/**/*.jade',['jade','bs-reload']);
 });
 
 //Browsing------------------------------------------------------------------------
@@ -132,16 +132,19 @@ gulp.task('image-optim:thumb', function() {
 });
 		
 //imagemin
-gulp.task('imagemin',['responsive'], function() {	
+gulp.task('imagemin', function() {	
 	gulp.src('app/images/*')
-		.pipe(changed('app/images'))
+		.pipe(plumber({
+		  errorHandler: notify.onError("Error: <%= error.message %>")
+		 }))
+		.pipe(changed('dist/images'))
 		.pipe(imagemin({
 			progressive: true,
 			svgoPlugins: [{removeViewBox: false}],
 			use: [pngquant()],
 			optimizationLevel:7
 		}))
-		.pipe(gulp.dest('app/images'));
+		.pipe(gulp.dest('dist/images'));
 });
 
 
@@ -154,7 +157,7 @@ gulp.task('copy', function() {
 //responsive
 gulp.task('responsive', function() {
 	var responsiveOptions = [{
-		name: '*',
+		name: 'sp-*',
 		width: 200
 	}]
 	

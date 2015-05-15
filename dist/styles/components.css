@@ -1,0 +1,6 @@
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ShinnosukeKomiya\/Dropbox\/me\/cham538\/cham538_source\/app\/styles\/global\/_module\.scss}line{font-family:\000032}}
+.clear:after {
+  content: '';
+  display: block;
+  clear: both;
+}

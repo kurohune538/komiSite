@@ -1,0 +1,44 @@
+// http://codepen.io/chriscoyier/blog/codepens-css by CodePen
+@mixin breakpoint($point) {
+  @if $point == baby-bear {
+    @media (max-width: 500px) { @content; }
+  }
+  @if $point == mama-bear {
+    @media (max-width: 700px) { @content; }
+  }
+  @if $point == papa-bear {
+    @media (max-width: 800px) { @content; }
+  }
+  @if $point == super-bear {
+    @media (max-width: 1280px) { @content; }
+  }
+
+  @if $point == reverso-baby-bear {
+    @media (min-width: 641px) { @content; }
+  }
+  @if $point == reverso-mama-bear {
+    @media (min-width: 768px) { @content; }
+  }
+  @if $point == reverso-papa-bear {
+    @media (min-width: 801px) { @content; }
+  }
+  @if $point == reverso-super-bear {
+    @media (min-width: 1281px) { @content; }
+  }
+
+  @if $point == exclusive-baby-bear {
+    @media (max-width: 500px) { @content; }
+  }
+  @if $point == exclusive-mama-bear {
+    @media (min-width: 501px) and (max-width: 800px) { @content; }
+  }
+  @if $point == exclusive-papa-bear {
+    @media (min-width: 801px) and (max-width: 1280px) { @content; }
+  }
+
+  @if $point == iOS {
+    @media (min-device-width: 768px) and (max-device-width: 1024px), (max-device-width: 480px) { 
+      @content; 
+    }
+  }
+}
