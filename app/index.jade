@@ -7,25 +7,48 @@ block meta
   meta(name="description", content="description")
 block link
   // build:css({.tmp,app}) styles/main.min.css
-  link(rel='stylesheet' href='styles/merged.css')
+  link(rel='stylesheet' href='styles/medium.css')
   // endbuild
 
 block body
   body
-    
+
     header
       .header-wrapper
+        .title-logo
+          img(src='images/six.png' width=51 height=44)
         .title Shinnosuke Komiya
-        
         .earth-logo 
           img(src='images/earth.png' width=38 height=39)
         ul.menu
-          li about
-          li works
-          li blog
-          li contact
-        
-          
-        
+          li 
+            a(href="") about
+          li
+            a(href="") works
+          li
+            a(href="") blog
+          li
+            a(href="") contact
     main
-    
+      section.content-wrapper
+        .profile-img
+          .img-wrapper
+            img(src="images/Profile.png" width=243 height=196)
+        h1.name 
+          .name-wrapper
+            .first-name Shinnosuke
+            .last-name Komiya
+        .detail-profile-wrapper  
+          h2.birthday Dec/27/1992
+          h2.belong 
+            .belong-wrapper
+              img(src='images/TMULogo.png' width=33 height=21) 
+              p Tokyo Metropolitan Univ.
+                span (Master 1st)
+          h2.tongue
+            .tongue-wrapper
+              img(src='images/tongue.png' width=24 height=24)
+              p Japanese/English/Chinese
+                span (a little)
+        
+        

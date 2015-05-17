@@ -1,28 +1,3 @@
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ShinnosukeKomiya\/Dropbox\/me\/cham538\/cham538_source\/app\/styles\/global\/_module\.scss}line{font-family:\000032}}
-.clear:after {
-  content: '';
-  display: block;
-  clear: both;
-}
-
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ShinnosukeKomiya\/Dropbox\/me\/cham538\/cham538_source\/app\/styles\/medium\.scss}line{font-family:\000035}}
-body {
-  font-family: "futura-pt",sans-serif;
-}
-
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ShinnosukeKomiya\/Dropbox\/me\/cham538\/cham538_source\/app\/styles\/medium\.scss}line{font-family:\000039}}
-header .header-wrapper {
-  width: 100%;
-  height: 96px;
-  background-color: #FFEC00;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ShinnosukeKomiya\/Dropbox\/me\/cham538\/cham538_source\/app\/styles\/medium\.scss}line{font-family:\0000316}}
-header .title {
-  color: #FFF;
-  font-size: 30px;
-  font-family: "futura-pt",sans-serif;
-}
-
 /* Welcome to Compass.
  * In this file you should write your main styles. (or centralize your imports)
  * Import this file using the following HTML or equivalent:
@@ -90,4 +65,120 @@ a img {
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ShinnosukeKomiya\/\.rvm\/gems\/ruby-2\.1\.5\@global\/gems\/compass-core-1\.0\.3\/stylesheets\/compass\/reset\/_utilities\.scss}line{font-family:\00003116}}
 article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
   display: block;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ShinnosukeKomiya\/Dropbox\/me\/cham538\/cham538_source\/app\/styles\/medium\.scss}line{font-family:\0000312}}
+body {
+  font-family: "futura-pt",sans-serif;
+  text-align: center;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ShinnosukeKomiya\/Dropbox\/me\/cham538\/cham538_source\/app\/styles\/medium\.scss}line{font-family:\0000317}}
+header .header-wrapper {
+  width: 100%;
+  height: 76px;
+  background-color: #FFEC00;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ShinnosukeKomiya\/Dropbox\/me\/cham538\/cham538_source\/app\/styles\/medium\.scss}line{font-family:\0000324}}
+header .title-logo {
+  float: left;
+  margin-left: 47px;
+  margin-top: 18px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ShinnosukeKomiya\/Dropbox\/me\/cham538\/cham538_source\/app\/styles\/medium\.scss}line{font-family:\0000331}}
+header .title {
+  float: left;
+  color: #FFF;
+  font-size: 30px;
+  font-family: "futura-pt",sans-serif;
+  margin-top: 23px;
+  margin-left: 17px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ShinnosukeKomiya\/Dropbox\/me\/cham538\/cham538_source\/app\/styles\/medium\.scss}line{font-family:\0000344}}
+header .earth-logo {
+  float: left;
+  margin-left: 23px;
+  margin-top: 20px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ShinnosukeKomiya\/Dropbox\/me\/cham538\/cham538_source\/app\/styles\/medium\.scss}line{font-family:\0000352}}
+header ul.menu {
+  float: right;
+  font-size: 20px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ShinnosukeKomiya\/Dropbox\/me\/cham538\/cham538_source\/app\/styles\/medium\.scss}line{font-family:\0000357}}
+header ul.menu li {
+  float: left;
+  padding-top: 40px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 16px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ShinnosukeKomiya\/Dropbox\/me\/cham538\/cham538_source\/app\/styles\/medium\.scss}line{font-family:\0000365}}
+header ul.menu li:hover {
+  background-color: #FFBB3A;
+  cursor: pointer;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ShinnosukeKomiya\/Dropbox\/me\/cham538\/cham538_source\/app\/styles\/medium\.scss}line{font-family:\0000371}}
+header ul.menu li a {
+  text-decoration: none;
+  color: #FFF;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ShinnosukeKomiya\/Dropbox\/me\/cham538\/cham538_source\/app\/styles\/medium\.scss}line{font-family:\0000379}}
+main {
+  width: 100%;
+  position: relative;
+  color: #FFF;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ShinnosukeKomiya\/Dropbox\/me\/cham538\/cham538_source\/app\/styles\/medium\.scss}line{font-family:\0000383}}
+main section.content-wrapper {
+  height: 100%;
+  background-color: #FFBB3A;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ShinnosukeKomiya\/Dropbox\/me\/cham538\/cham538_source\/app\/styles\/medium\.scss}line{font-family:\0000388}}
+main section.content-wrapper .profile-img {
+  height: 196px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ShinnosukeKomiya\/Dropbox\/me\/cham538\/cham538_source\/app\/styles\/medium\.scss}line{font-family:\0000390}}
+main section.content-wrapper .profile-img .img-wrapper {
+  width: 243px;
+  height: 196px;
+  position: absolute;
+  left: 50%;
+  margin-left: -121px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ShinnosukeKomiya\/Dropbox\/me\/cham538\/cham538_source\/app\/styles\/medium\.scss}line{font-family:\00003100}}
+main section.content-wrapper h1.name {
+  height: auto;
+  font-size: 36px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ShinnosukeKomiya\/Dropbox\/me\/cham538\/cham538_source\/app\/styles\/medium\.scss}line{font-family:\00003105}}
+main section.content-wrapper h1.name .name-wrapper .first-name, main section.content-wrapper h1.name .name-wrapper .last-name {
+  display: inline;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ShinnosukeKomiya\/Dropbox\/me\/cham538\/cham538_source\/app\/styles\/medium\.scss}line{font-family:\00003116}}
+main section.content-wrapper h1.name .name-wrapper .last-name {
+  clear: right;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ShinnosukeKomiya\/Dropbox\/me\/cham538\/cham538_source\/app\/styles\/medium\.scss}line{font-family:\00003122}}
+main section.content-wrapper .detail-profile-wrapper {
+  font-size: 24px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ShinnosukeKomiya\/Dropbox\/me\/cham538\/cham538_source\/app\/styles\/medium\.scss}line{font-family:\00003127}}
+main section.content-wrapper .detail-profile-wrapper h2.birthday {
+  margin-top: 5px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ShinnosukeKomiya\/Dropbox\/me\/cham538\/cham538_source\/app\/styles\/medium\.scss}line{font-family:\00003132}}
+main section.content-wrapper .detail-profile-wrapper h2.belong {
+  margin-top: 5px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ShinnosukeKomiya\/Dropbox\/me\/cham538\/cham538_source\/app\/styles\/medium\.scss}line{font-family:\00003136}}
+main section.content-wrapper .detail-profile-wrapper h2.belong span {
+  font-size: 18px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ShinnosukeKomiya\/Dropbox\/me\/cham538\/cham538_source\/app\/styles\/medium\.scss}line{font-family:\00003141}}
+main section.content-wrapper .detail-profile-wrapper h2.belong p {
+  float: left;
 }

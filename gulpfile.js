@@ -50,28 +50,27 @@ gulp.task('jade', function() {
 //実際にそのタスクが何をするのかの登録
 gulp.task('compass',function(){
 		//ここからタスクの内容
-		return gulp.src(['./app/styles/*.scss'])
-			.pipe(watch('./app/styles/*.scss'))
+		return gulp.src(['app/styles/*.scss'])
+			.pipe(watch('app/styles/*.scss'))
 			.pipe(cache( 'compass' ))
 			.pipe(plumber({
 				errorHandler: notify.onError("Error: <%= error.message %>")
 			}))
 			.pipe(compass({
-				config_file: './config.rb',//compass設定ファイルの場所
+				config_file: 'config.rb',//compass設定ファイルの場所
 				comments: false,//コメントを残すか
-				css: './dist/styles/',//吐き出すcssの場所
-				sass: './app/styles/'//sassファイルの場所
+				css: 'dist/styles',//吐き出すcssの場所
+				sass: 'app/styles'//sassファイルの場所
 			}));
 });
 
 //watch
 gulp.task('watch',function() {
-	gulp.watch('app/styles/**/*.scss',['compass']);
-	gulp.watch('dist/styles/**/*.css', ['autoprefixer']);
-	gulp.watch('app/styles/**/*.css', ['cssmin']);
+	gulp.watch('app/styles/*.scss',['compass']);
+	//gulp.watch('dist/styles/*.css', ['autoprefixer']);
+	gulp.watch('dist/styles/*.css', ['autoprefixer','cssmin','bs-reload']);
 	//gulp.watch('app/*.html',['copy','bs-reload']);
 	gulp.watch('app/images/*',['imagemin']);
-	gulp.watch('app/styles/**/*.scss',['bs-reload']);
 	gulp.watch('app/js/*.js', ['uglify','bs-reload']);
 	gulp.watch('app/**/*.jade',['jade','bs-reload']);
 });
@@ -201,7 +200,7 @@ gulp.task('sketch',['sketchExport:slices']);
 //autoprefxer
 //ファイル名を明示的に示さないとエラーになるらしい？
 gulp.task('autoprefixer', function() {
-	gulp.src('dist/styles/*.css')
+	return gulp.src('dist/styles/*.css')
 		.pipe(autoprefixer());
 });
 
