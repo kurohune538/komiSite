@@ -71,7 +71,8 @@ gulp.task('watch',function() {
 	gulp.watch('dist/styles/*.css', ['autoprefixer','cssmin','bs-reload']);
 	//gulp.watch('app/*.html',['copy','bs-reload']);
 	gulp.watch('app/images/*',['imagemin']);
-	gulp.watch('app/js/*.js', ['uglify','bs-reload']);
+	//gulp.watch('app/js/*.js', ['uglify','bs-reload']);
+	//gulp.watch('app/js/lib/*.js',['uglify-lib','bs-reload']);
 	gulp.watch('app/**/*.jade',['jade','bs-reload']);
 });
 
@@ -216,10 +217,17 @@ gulp.task('cssmin',function() {
 //js----------------------------------------------------------------------
 //uglify
 gulp.task('uglify', function() {
-	gulp.src('app/js/*')
+	gulp.src('app/js/*.js')
 		.pipe(uglify())
 		.pipe(rename({suffix: '.min'}))
 		.pipe(gulp.dest('dist/js/min'));
+});
+
+gulp.task('uglify-lib', function() {
+	gulp.src('app/js/lib/*.js')
+		.pipe(uglify())
+		.pipe(rename({suffix: '.min'}))
+		.pipe(gulp.dest('dist/js/min/lib'));
 });
 //deploy
 

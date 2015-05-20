@@ -1,3 +1,0 @@
-function ss() {
-  alert("ss");
-}
