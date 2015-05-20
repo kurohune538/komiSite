@@ -29,7 +29,7 @@ html {
   background: {
     color: $yellow;
   }
-  overflow: hidden;
+  //overflow: hidden;
   height: 100%;
 }
 body {
@@ -108,14 +108,13 @@ header {
 main {
   width: 100%;
   position: relative;
-  height: auto;
   color: $white;
   background-color: $orange;
   section.content-wrapper {
     position: absolute;
     top: 76px;
     width: 100%;
-    height: 1024px;
+    padding-bottom: 40px;
     background: {
       color: $orange;
     }
@@ -196,7 +195,6 @@ main {
       }
     }
     .skills-and-tools-wrapper {
-      height: 408px;
       .skill-title-wrapper {
         width: 100%;
         height: 68px;
@@ -213,10 +211,6 @@ main {
       }
       .skills-wrapper {
         width: 100%;
-        height: 295px;
-        margin: {
-          top: 17px;
-        }
       }
       ul{
         clear: both;
