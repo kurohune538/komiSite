@@ -29,7 +29,7 @@ html {
   background: {
     color: $yellow;
   }
-  //overflow: hidden;
+  overflow: hidden;
   height: 100%;
 }
 body {
@@ -211,20 +211,21 @@ main {
       }
       .skills-wrapper {
         width: 100%;
+        margin-top: 10px;
       }
       ul{
         clear: both;
 
         &.skills{
-          width: 943px;
+          width: 861px;
           margin: 0 auto;
         }
         &.tools{
-          width: 600px;
+          width: 534px;
           margin: 0 auto;
         }
         &.hobby {
-          width: 530px;
+          width: 460px;
           margin: 0 auto;
         }
         li {
@@ -245,6 +246,17 @@ main {
             }
             p {
               font-size: 11px;
+              margin-top: 4px;
+            }
+          }
+          &.middle {
+            margin: {
+              left: 8px;
+              right: 8px;
+            }
+
+            p{
+              font-size: 12px;
               margin-top: 4px;
             }
           }
