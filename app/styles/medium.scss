@@ -150,11 +150,7 @@ main {
         bottom: 10px;
       }
       img {
-        transition: all 1s ease;
-        margin: 0 auto;
-        &:hover{
-          transform: rotate(720deg);
-        }
+        margin: 0 auto;        
       }
 
     }
