@@ -11,7 +11,7 @@ block link
 
 block body
   body
-    //.loading-bg
+    .loading-bg
       .loading-img
         img(src="images/loading-six.png" width=129 height=111.72)
     header
@@ -24,13 +24,13 @@ block body
           img(src='images/earth.png' width=38 height=39)
         ul.menu
           li 
-            a(href="") about
+            a.about-tab(href="#" onClick="appendDom('about'); return false") about
           li
-            a(href="") works
+            a.works-tab(href="#" onClick="appendDom('works'); return false") works
           li
-            a(href="") blog
+            a.blog-tab(href="#" onClick="appendDom('blog'); return false") blog
           li
-            a(href="") contact
+            a.contact-tab(href="#" onClick="appendDom('contact'); return false") contact
     main
       section.top-wrapper
         .top-earth-wrapper
@@ -45,7 +45,7 @@ block body
           p Komiya
         .next-pointer
           img(src="images/next.png" width=90 height=47)
-      section.content-wrapper
+      section.about-content-wrapper
         .profile-img
           img(src="images/Profile.png" width=158 height=138)
         h1.name 
@@ -66,19 +66,19 @@ block body
                 span (a little)
           .sns-icon
             .sns-icon-wrapper
-              a.twitter-icon(href="https://twitter.com/kurohune538")
+              a.twitter-icon(href="https://twitter.com/kurohune538" target="_blank")
                 img(src='images/twitter.png' width=28 height=28)
-              a.facebook-icon(href="https://www.facebook.com/sinnosuke.komiya")
+              a.facebook-icon(href="https://www.facebook.com/sinnosuke.komiya" target="_blank")
                 img(src='images/facebook-icon.png' width=28 height=28)
-              a.googleplus-icon(href="https://plus.google.com/u/0/110217528722787480805/posts")
+              a.googleplus-icon(href="https://plus.google.com/u/0/110217528722787480805/posts" target="_blank")
                 img(src='images/googleplus-icon.png' width=28 height=28)
-              a.github-icon(href="https://github.com/kurohune538")
+              a.github-icon(href="https://github.com/kurohune538" target="_blank")
                 img(src='images/github-icon.png' width=28 height=28)
-              a.pinterest-icon(href="https://jp.pinterest.com/qbmmm/")
+              a.pinterest-icon(href="https://jp.pinterest.com/qbmmm/" target="_blank")
                 img(src='images/pinterest-icon.png' width=28 height=28)
-              a.linkedin-icon(href="https://jp.linkedin.com/pub/shinnosuke-komiya/89/821/214")
+              a.linkedin-icon(href="https://jp.linkedin.com/pub/shinnosuke-komiya/89/821/214" target="_blank")
                 img(src='images/linkedin-icon.png' width=28 height=28)
-              a.hatena-icon(href="http://kurohune538.hatenablog.com/")
+              a.hatena-icon(href="http://kurohune538.hatenablog.com/" target="_blank")
                 img(src='images/hatena-icon.png' width=28 height=28)              
           
         section.skills-and-tools-wrapper
@@ -161,3 +161,24 @@ block body
                 img(src="images/kendo-icon.png" width=58 height=58)
                 p Kendo
         
+      section.works-content-wrapper
+          .web-works
+            .centering-wrapper
+              img(src='images/web-works-icon.png')
+              p Web
+          .app-works
+            .centering-wrapper
+              img(src='images/app-works-icon.png')
+              p Mobile App
+          .hardware-works
+            .centering-wrapper
+              img(src='images/hardware-works-icon.png')
+              p Hardware
+          .mp-works
+            .centering-wrapper
+              img(src='images/mp-works-icon.png')
+              p Movie 
+                br
+                |&
+                br
+                |Photo  
