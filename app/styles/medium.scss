@@ -35,6 +35,7 @@ html {
 body {
   font-family: "futura-pt",sans-serif;
   text-align: center;
+  height: 100%;
 }
 
 .loading-bg {
@@ -63,6 +64,7 @@ body {
   }
 }
 header {
+  display: none;
   width: 100%;
   position: fixed;
   z-index: 2;
@@ -133,14 +135,71 @@ header {
 
 main {
   width: 100%;
+  height: 100%;
   position: relative;
   color: $white;
   background-color: $orange;
-  section.content-wrapper {
-    position: absolute;
-    top: 76px;
+  section.top-wrapper {
     width: 100%;
-    padding-bottom: 40px;
+    height: 100%;
+    background: {
+      color: $yellow;
+    }
+    .top-earth-wrapper {
+      width: 100%;
+      height: 104px;
+      img.top-earth {
+        float: right;
+        margin: {
+          top: 36px;
+          right: 37px;
+        }
+      }
+      .top-earth-text {
+        float: right;
+        margin-top: 26px;
+        text-align: right;
+
+        p {
+          font-size: 36px;
+          &.line1 {
+            margin: {
+              right: 76px;
+            }
+          }
+          &.line2 {
+            margin: {
+              right: 26px;
+            }
+          }
+        }
+      }
+    }
+    .top-profile-img {
+      width: 100%;
+      height: 146px;
+      margin-top: 80px;
+    }
+    .top-profile-name {
+      width: 100%;
+      margin: {
+        top: 20px;
+      }
+      p {
+        font-size: 100px;
+        margin: 0 auto;
+      }
+    }
+    .next-pointer {
+      @include centering(90px);
+      bottom: 43px;
+
+    }
+
+  }
+  section.content-wrapper {
+    width: 100%;
+    height: 100%;
     background: {
       color: $orange;
     }
@@ -150,7 +209,8 @@ main {
         bottom: 10px;
       }
       img {
-        margin: 0 auto;        
+        margin: 0 auto;
+        margin-top: 76px;
       }
 
     }
@@ -248,11 +308,11 @@ main {
           margin: 0 auto;
         }
         &.tools{
-          width: 534px;
+          width: 535px;
           margin: 0 auto;
         }
         &.hobby {
-          width: 460px;
+          width: 461px;
           margin: 0 auto;
         }
         li {

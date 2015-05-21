@@ -21,7 +21,7 @@
     <!-- endbuild-->
     <link rel="icon" href="images/favicon.ico">
     <!--script(src="scripts/vendor/modernizr.custom.js")-->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
     <script src="js/min/lib/jquery.rotate.1-1.min.js"></script>
     <script src="js/min/main.min.js"></script>
     <!-- build:css({.tmp,app}) styles/ie8.css-->
@@ -30,9 +30,8 @@
   </head>
 
   <body>
-    <div class="loading-bg">
-      <div class="loading-img"><img src="images/loading-six.png" width="129" height="111.72"></div>
-    </div>
+    <!--.loading-bg.loading-img
+  img(src="images/loading-six.png" width=129 height=111.72)-->
     <header>
       <div class="header-wrapper">
         <a href="/" class="title-wrapper">
@@ -48,6 +47,20 @@
       </div>
     </header>
     <main>
+      <section class="top-wrapper">
+        <div class="top-earth-wrapper"><img src="images/eath-large.png" width="68" height="68" class="top-earth">
+          <div class="top-earth-text">
+            <p class="line1">Watch him </p>
+            <p class="line2">by Earth</p>
+          </div>
+        </div>
+        <div class="top-profile-img"><img src="images/profile-large.png" width="166" height="146"></div>
+        <div class="top-profile-name">
+          <p>Shinnosuke</p>
+          <p>Komiya</p>
+        </div>
+        <div class="next-pointer"><img src="images/next.png" width="90" height="47"></div>
+      </section>
       <section class="content-wrapper">
         <div class="profile-img"><img src="images/Profile.png" width="158" height="138"></div>
         <h1 class="name"> <div class="name-wrapper"><div class="first-name">Shinnosuke</div><div class="last-name">Komiya</div></div></h1>
