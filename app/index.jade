@@ -18,7 +18,8 @@ block body
       .header-wrapper
         a.title-wrapper(href="/")
           .title-logo
-            img(src='images/six.png' width=51 height=44)
+            img.six-yellow(src='images/six-yellow.png' width=51 height=44)
+            img.six-green(src='images/six-green.png' width=51 height=44)
           h1.title Shinnosuke Komiya
         .earth-logo 
           img(src='images/earth.png' width=38 height=39)
@@ -162,7 +163,7 @@ block body
                 p Kendo
         
       section.works-content-wrapper
-          .web-works
+          .web-works(onClick="showWebWorks()")
             .centering-wrapper
               img(src='images/web-works-icon.png')
               p Web
