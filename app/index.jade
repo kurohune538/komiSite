@@ -167,15 +167,67 @@ block body
             .centering-wrapper
               img(src='images/web-works-icon.png')
               p Web
-          .app-works
+            .icon-title-wrapper
+              img(src='images/web-works-icon.png' width=40 height=40)
+              p Web
+            .works-list
+              .list-wrapper
+                ul
+                  a(href="http://cansat.mapping.jp/" target="_blank")
+                    li.cansat
+                      img(src="images/cansatSS.png")
+                      dl
+                        dt cansatmapping
+                        dd cansat is a project of launch sattelite made by can.
+                          br
+                          |We mapped them where they were launched on the Earth.
+                        dd.used-skill HTML/CSS/javascript/GoogleEarth
+                  a(href="http://sailor.link" target="_blank")
+                    li.sailor
+                      img(src="images/sailor.png")
+                      dl
+                        dt sailor
+                        dd cansat is a project of launch sattelite made by can.
+                          br
+                          |We mapped them where they were launched on the Earth.
+                        dd.used-skill HTML/CSS/javascript/GoogleEarth
+                  a(href="https://haletto.jp/" target="_blank")
+                    li.haletto
+                      img(src="images/haletto.png")
+                      dl
+                        dt haletto
+                        dd cansat is a project of launch sattelite made by can.
+                          br
+                          |We mapped them where they were launched on the Earth.
+                        dd.used-skill HTML/CSS/javascript/GoogleEarth
+                  a(href="http://kurohune538.sakura.ne.jp/Chu2/index.html" target="_blank")
+                    li.chu2
+                      img(src="images/chu2.png")
+                      dl
+                        dt 中二病
+                        dd cansat is a project of launch sattelite made by can.
+                          br
+                          |We mapped them where they were launched on the Earth.
+                        dd.used-skill HTML/CSS/javascript/GoogleEarth          
+                ul  
+                  a(href="http://kurohune538.sakura.ne.jp/Sesami/index.html" target="_blank")
+                    li.sesami
+                      img(src="images/sesami.png")
+                      dl
+                        dt エルモと一緒に塗り絵をしよう
+                        dd cansat is a project of launch sattelite made by can.
+                          br
+                          |We mapped them where they were launched on the Earth.
+                        dd.used-skill HTML/CSS/javascript/GoogleEarth                          
+          .app-works(onClick="showAppWorks()")
             .centering-wrapper
               img(src='images/app-works-icon.png')
               p Mobile App
-          .hardware-works
+          .hardware-works(onClick="showHardWareWorks()")
             .centering-wrapper
               img(src='images/hardware-works-icon.png')
               p Hardware
-          .mp-works
+          .mp-works(onClick="showMpWorks()")
             .centering-wrapper
               img(src='images/mp-works-icon.png')
               p Movie 
