@@ -510,7 +510,7 @@ main section.works-content-wrapper .works-list .list-wrapper ul {
 main section.works-content-wrapper .works-list .list-wrapper ul li {
   float: left;
   position: relative;
-  margin: 0 5px;
+  margin: 5px 5px;
   width: 23.5%;
   margin-left: 5px;
   height: 100%;
