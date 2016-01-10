@@ -19,7 +19,7 @@ var imagemin = require('gulp-imagemin');
 var pngquant = require('imagemin-pngquant');
 var changed = require('gulp-changed');
 var cache = require('gulp-cached');
-var responsive = require('gulp-responsive');
+//var responsive = require('gulp-responsive');
 var filelog     = require('gulp-filelog'); //fileの進捗を表示する
 var imageResize = require('gulp-image-resize');
 var exec = require('gulp-exec');
@@ -33,7 +33,7 @@ var htmlhint = require("gulp-htmlhint");
 var paths = {
 		app: 'app',
 		dest: 'dist'
-}
+};
 
 //html
 gulp.task('jade', function() {
@@ -42,6 +42,11 @@ gulp.task('jade', function() {
 			.pipe(htmlhint())
 			.pipe(prettify({indent_size:2}))
 			.pipe(gulp.dest('dist/'));
+	  gulp.src('app/chamEarth/*.jade')
+			.pipe(jade())
+			.pipe(htmlhint())
+			.pipe(prettify({indent_size:2}))
+			.pipe(gulp.dest('dist/chamEarth/'));
 });
 
 
@@ -118,11 +123,11 @@ gulp.task('image-optim:thumb', function() {
 		upscale: false,
 		imageMagick: true
 	};
-	
+
 	var imageminOptions = {
 		optimizationLevel: 7
 	};
-	
+
 	return gulp.src('app/images/thumb/*')
 		.pipe(changed('dist/images/thumb'))
 		.pipe(imageResize( resizeOptions ))
@@ -130,9 +135,9 @@ gulp.task('image-optim:thumb', function() {
 		.pipe(gulp.dest('dist/images/thumb'))
 		.pipe(filelog());
 });
-		
+
 //imagemin
-gulp.task('imagemin', function() {	
+gulp.task('imagemin', function() {
 	gulp.src('app/images/*')
 		.pipe(plumber({
 		  errorHandler: notify.onError("Error: <%= error.message %>")
@@ -160,7 +165,7 @@ gulp.task('responsive', function() {
 		name: 'sp-*',
 		width: 200
 	}]
-	
+
 	return gulp.src('app/images/*')
 		.pipe(responsive(responsiveOptions))
 		.pipe(gulp.dest('dist/images'));
@@ -172,7 +177,7 @@ gulp.task('sketchtool', function() {
 	var sketchToolOptions = {
 		dstDir : 'dist/images/sketchimg/'
 	};
-	
+
 	gulp.src('../design/*.sketch')
 		.pipe(exec( 'sketchtool export artboards <%= file.path %> --output=<%= options.dstDir %>', sketchToolOptions))
 		.pipe(exec.reporter());
@@ -184,17 +189,17 @@ gulp.task('sketchExport:slices', function() {
 	var sketchOptions = {
 		export : 'slices'
 	};
-	
+
 	var imageminOptions = {
 		optimizationLevel: 7
 	};
-	
+
 	return gulp.src('../design/*.sketch')
 		.pipe(sketch( sketchOptions ))
 		.pipe(imagemin( imageminOptions ))
 		.pipe(gulp.dest('dist/images/sketchimg'))
 		.pipe(filelog());
-}); 
+});
 //sketch
 gulp.task('sketch',['sketchExport:slices']);
 //css----------------------------------------------------------------------
@@ -237,7 +242,7 @@ gulp.task('uglify-lib', function() {
 //	var headers = {
 //		'Cache-Control': 'max-age=315360000, no-transform, public'
 //	};
-//	
+//
 //	gulp.src('dist/**/*')
 //		.pipe(publisher.publish(headers))
 //		.pipe(publisher.cache())
@@ -246,4 +251,3 @@ gulp.task('uglify-lib', function() {
 
 //gulp本来のタスクを登録する
 gulp.task('default', ['watch','serve','browser-sync']);
-
